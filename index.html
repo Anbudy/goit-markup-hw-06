@@ -484,7 +484,7 @@
             </ul>
           </address>
         </div>
-        <div class="social-footer">
+        <div class="footer-group">
           <h3 class="foot-head-txt">Приєднуйтесь</h3>
           <ul class="social-list list">
             <li class="social-item">
@@ -538,6 +538,20 @@
             </li>
           </ul>
         </div>
+        <div class="footer-group">
+          <h3 class="foot-head-txt">Підпищіться на розсилку</h3>
+          <form name="subscription" class="subscription-form" autocomplete="off" action="">
+            <label>
+              <input type="email" class="foot-form-input" name="lead-email" placeholder="Email" />
+            </label>
+            <button class="subscription-form-btn btn" type="submit">
+              Підписатися
+              <svg class="modal-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -546,9 +560,75 @@
       <div class="modal">
         <button class="modal-btn" data-modal-close>
           <svg class="modal-btn-icon" width="18" height="18">
-            <use href="./images/_icons.svg#close"></use>
+            <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+
+        <strong class="modal-form-title">Залиште свої дані, ми вам передзвонимо</strong>
+
+        <form class="modal-form" name="modal-form" autocomplete="off">
+          <div class="modal-form-group" role="group">
+            <label class="modal-form-wrap" for="lead-name">
+              <span class="modal-form-label">Ім'я</span>
+              <input class="modal-form-input" id="lead-name" type="text" name="lead-name" />
+              <svg class="modal-form-icon" width="18" height="18">
+                <use href="./images/icons.svg#lead"></use>
+              </svg>
+            </label>
+            <label class="modal-form-wrap" for="lead-tel">
+              <span class="modal-form-label">Телефон</span>
+              <input class="modal-form-input" id="lead-tel" type="tel" name="lead-tel" />
+              <svg class="modal-form-icon" width="18" height="18">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </label>
+            <label class="modal-form-wrap" for="lead-email">
+              <span class="modal-form-label">Пошта</span>
+              <input class="modal-form-input" id="lead-email" type="email" name="lead-email" />
+              <svg class="modal-form-icon" width="18" height="18">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </label>
+            <label class="modal-form-wrap" for="lead-comment">
+              <span class="modal-form-label">Коментар</span>
+              <textarea
+                class="modal-form-textarea"
+                id="lead-comment"
+                type="text"
+                rows="6"
+                placeholder="Введить текст"
+                name="lead-comment"
+              ></textarea>
+            </label>
+            <label class="modal-form-agreement">
+              <input
+                class="modal-form-checkbox visually-hidden"
+                id="agree"
+                type="checkbox"
+                name="agreement"
+              />
+              <svg class="modal-form-checkbox-icon" width="16" height="15">
+                <use
+                  class="modal-form-checkbox-icon-Off"
+                  href="./images/icons.svg#checkboxoff"
+                ></use>
+                <use class="modal-form-checkbox-icon-On" href="./images/icons.svg#checkboxon"></use>
+              </svg>
+              <span class="modal-form-agreement-text"
+                >Погоджуюся з розсилкою та приймаю&nbsp
+                <a
+                  class="modal-form-agreement-link link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Умови договору
+                </a>
+              </span>
+            </label>
+            <button type="submit" class="main-mes-btn">Відправити</button>
+          </div>
+        </form>
       </div>
     </div>
 
